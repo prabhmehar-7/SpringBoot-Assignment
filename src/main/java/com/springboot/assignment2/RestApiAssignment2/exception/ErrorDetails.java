@@ -1,0 +1,30 @@
+package com.springboot.assignment2.RestApiAssignment2.exception;
+
+
+import java.time.LocalDateTime;
+
+//This class defines how we want our exception to be represented
+
+public class ErrorDetails {
+    private LocalDateTime timeStamp ;
+    private String message ;
+    private String details ;
+
+    public ErrorDetails(LocalDateTime timeStamp, String message, String details) {
+        this.timeStamp = timeStamp;
+        this.message = message;
+        this.details = details;
+    }
+
+    public LocalDateTime getTimeStamp() {
+        return timeStamp;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public String getDetails() {
+        return details;
+    }
+}
